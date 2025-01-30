@@ -1,0 +1,11 @@
+const fs1=require('fs')
+
+//Read the file -readFile()
+fs1.readFile('kle.txt','utf8',(err,data)=>
+{
+if(err)   
+{
+ console.error('error reading file:',err)
+}
+console.log(data);
+})
